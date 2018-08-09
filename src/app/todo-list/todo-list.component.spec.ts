@@ -35,7 +35,13 @@ describe('TodoListComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // it('Should have a h3 tag with New Todo', () => {
+  //   const compiled = fixture.debugElement.nativeElement;
+  //   expect(compiled.querySelector('h3').textContent).toContain('New Todo');
+  // });
 });

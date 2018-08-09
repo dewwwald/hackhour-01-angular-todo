@@ -1,10 +1,11 @@
 <label class="grid">
   <div class="grid__item w--fill">
     <p>
-      {{todoItem.description}}
+      {{todoItem?.description}}
     </p>
   </div>
   <div class="grid__item w--auto">
-    <ng-container *ngTemplateOutlet="actions"></ng-container>
+    <ng-container *ngTemplateOutlet="actions || actionsDefault"></ng-container>
   </div>
 </label>
+<ng-template #actionsDefault></ng-template>
