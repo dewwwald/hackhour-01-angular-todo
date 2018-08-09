@@ -1,9 +1,11 @@
 .grid {
   display: flex;
+  align-items: center;
   flex-wrap: nowrap;
   border: 1px solid;
   box-shadow: 1px 1px 3px #888;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .grid__item {
