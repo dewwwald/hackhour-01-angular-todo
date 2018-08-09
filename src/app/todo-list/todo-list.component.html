@@ -1,0 +1,15 @@
+<app-todo-item *ngFor="let todoItem of todoList; let i = index; "
+  [todoItem]="todoItem">
+  <ng-template #actions>
+    <input [(ngModel)]="todoItem.completedStatus"
+      (ngModelChange)="onStatusToggle(i)"
+      name="completedStatus" type="checkbox">
+  </ng-template>
+</app-todo-item>
+<div>
+  <h3>New Todo</h3>
+  <input [(ngModel)]="newTodo.description" type="text" name="description">
+  <button (click)="addNewTodo()">
+    add todo
+  </button>
+</div>

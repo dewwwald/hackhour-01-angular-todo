@@ -1,0 +1,10 @@
+<div class="grid">
+  <div class="grid__item w--fill">
+    <p>
+      {{todoItem.description}}
+    </p>
+  </div>
+  <div class="grid__item w--auto">
+    <ng-container *ngTemplateOutlet="actions"></ng-container>
+  </div>
+</div>
