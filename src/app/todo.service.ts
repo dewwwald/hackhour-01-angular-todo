@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { ITodo } from './todo.interface';
 import { Observable, Subscription } from 'rxjs';
-import deepFreeze from 'deep-freeze';
+import * as deepFreeze from 'deep-freeze';
 
 const INITIAL_DATA: ITodo[] = [
   { description: 'Add Karma and configure', completedStatus: false },
